@@ -1,0 +1,232 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Untitled Document</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<!--gallery ramnath jquery start-->
+        <link rel="stylesheet" type="text/css" href="css/jquery.bxslider.css" />
+<script type="text/javascript" src="js/jquery-1.7.1.min.js"></script>
+
+		
+		<script type="text/javascript" src="js/jquery.bxslider.js"></script>
+
+    <script type="text/javascript">
+  $(document).ready(function(){
+    
+$('.bxslider').bxSlider({
+  minSlides: 1,
+  maxSlides: 4,
+  slideWidth: 180,
+  slideMargin: 0,
+  auto: true,
+  pager: true,
+ 
+  
+});
+  });
+    
+</script>
+
+    	
+
+<!---light--->
+<script>
+		!window.jQuery && document.write('<script src="jquery-1.4.3.min.js"><\/script>');
+	</script>
+<script type="text/javascript" src="fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript" src="fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" type="text/css" href="fancybox/jquery.fancybox-1.3.4.css" media="screen" />
+<link rel="stylesheet" href="css/facnybox.css" />
+<script type="text/javascript">
+		$(document).ready(function() {
+			/*
+			*   Examples - images
+			*/
+
+			$("a#example1").fancybox();
+
+			$("a#example2").fancybox({
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'elastic'
+			});
+
+			$("a#example3").fancybox({
+				'transitionIn'	: 'none',
+				'transitionOut'	: 'none'	
+			});
+
+			$("a#example4").fancybox({
+				'opacity'		: true,
+				'overlayShow'	: false,
+				'transitionIn'	: 'elastic',
+				'transitionOut'	: 'none'
+			});
+
+			$("a#example5").fancybox();
+
+			$("a#example6").fancybox({
+				'titlePosition'		: 'outside',
+				'overlayColor'		: '#000',
+				'overlayOpacity'	: 0.9
+			});
+
+			$("a#example7").fancybox({
+				'titlePosition'	: 'inside'
+			});
+
+			$("a#example8").fancybox({
+				'titlePosition'	: 'over'
+			});
+
+			$("a[rel=example_group]").fancybox({
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'titlePosition' 	: 'over',
+				'titleFormat'		: function(title, currentArray, currentIndex, currentOpts) {
+					return '<span id="fancybox-title-over">Image ' + (currentIndex + 1) + ' / ' + currentArray.length + (title.length ? ' &nbsp; ' + title : '') + '</span>';
+				}
+			});
+
+			/*
+			*   Examples - various
+			*/
+
+			$("#various1").fancybox({
+				'titlePosition'		: 'inside',
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+
+			$("#various2").fancybox();
+
+			$("#various3").fancybox({
+				'width'				: '75%',
+				'height'			: '75%',
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none',
+				'type'				: 'iframe'
+			});
+
+			$("#various4").fancybox({
+				'padding'			: 0,
+				'autoScale'			: false,
+				'transitionIn'		: 'none',
+				'transitionOut'		: 'none'
+			});
+		});
+	</script>
+    
+    
+    <!--responsive-->
+    
+    <script>
+		$(function() {
+			var pull 		= $('#pull');
+				menu 		= $('nav ul');
+				menuHeight	= menu.height();
+
+			$(pull).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+
+
+        		var w = $(window).width();
+				
+        		if(w > 320 && menu.is(':hidden')) {
+        			menu.removeAttr('style');
+        		}
+				
+				if(w == 768)
+				{
+					menu.hide();
+				}
+					
+    		});
+			
+		
+
+		});
+	</script>
+</head>
+<body>
+<div class="row">
+<div class="main-wrapper">
+  <div id="wrapper">
+    <header>
+      <div class="logo"> <img src="images/logo.png" alt="" />
+      <h5>The South London recording studio and hub of the SMV writing and production team.</h5>
+      
+       </div>
+    </header>
+    <div class="clear"></div>
+    <div class="left-section">
+     
+            <nav class="clearfix ">
+    <a href="#" id="pull">Menu</a>
+    <div class="clear"></div>
+		<ul class="clearfix">
+			<li><a href="#">Contact</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">SMV</a></li>
+          <li><a href="#">Projects</a></li>
+          <li><a href="#">Contact</a></li>
+		</ul>
+		
+	</nav>
+   
+    </div>
+   
+    <div class="right-section">
+      <section>
+         <div class="clear"></div>
+       <h1><span class='white'>P L A N B </span><span class='gray'>S O P H I E D E L I L A </span><span class='white'>N I T I N S A W H N E Y</span>
+						<span class='gray'>D A N I E L B E D I N G F I E L D </span><span class='white'>G A R O U </span><span class='gray'>E R I C A P P A P O U L A Y</span>
+						<span class='white'>A T H E N A </span> <span class='gray'>D I F F </span><span class='white'> P A R A D E T H E W I S E C H I L D R E N</span>
+						<span class='gray'>N A T T Y </span><span class='white'> C A S S E L L T H E B E A T M A K E R</span><span class='gray'> J E F F B E C K</span>
+						<span class='white'>T R I C K T H E F O X </span><span class='gray'> R I Z Z L E K I C K S </span>&nbsp;<span class='white'> M A R C I N A A R N O L D</span></h1>
+        
+         
+         
+         
+      </section>
+      <div class="clear p5"></div>
+      <section>
+        
+              <!-- Elastislide Carousel Thumbnail Viewer -->
+                <div class="clear p15"></div>
+              
+              <ul class="bxslider">
+					 <li><a rel="example_group" href="images/carousel1-b.png"><img src="images/carousel1.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel2-b.png"><img src="images/carousel2.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel3-b.png"><img src="images/carousel3.png" alt="carousel1.png"/></a></li>
+                    <li><a rel="example_group" href="images/carousel4-b.png"><img src="images/carousel4.png" alt="carousel1.png"  /></a></li>
+                    <li><a rel="example_group" href="images/carousel1-b.png"><img src="images/carousel1.png" alt="carousel1.png"  /></a></li>
+                    <li><a rel="example_group" href="images/carousel2-b.png"><img src="images/carousel2.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel3-b.png"><img src="images/carousel3.png" alt="carousel1.png"  /></a></li>
+                    <li><a rel="example_group" href="images/carousel4-b.png"><img src="images/carousel4.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel1-b.png"><img src="images/carousel1.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel2-b.png"><img src="images/carousel2.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel3-b.png"><img src="images/carousel3.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel4-b.png"><img src="images/carousel4.png" alt="carousel1.png"  /></a></li>
+                    <li><a rel="example_group" href="images/carousel1-b.png"><img src="images/carousel1.png" alt="carousel1.png"  /></a></li>
+                    <li><a rel="example_group" href="images/carousel2-b.png"><img src="images/carousel2.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel3-b.png"><img src="images/carousel3.png" alt="carousel1.png" /></a></li>
+                    <li><a rel="example_group" href="images/carousel4-b.png"><img src="images/carousel4.png" alt="carousel1.png" /></a></li>
+					
+				</ul>
+              <!-- End Elastislide Carousel Thumbnail Viewer -->
+       
+      </section>
+      <footer class="copyright"> © 2012 The Sanctuary Recording Studio . All rights reserved </footer>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
